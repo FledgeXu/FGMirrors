@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.otakusaikou'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url = 'https://files.minecraftforge.net/maven' }
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.0.164'
+}
