@@ -12,6 +12,16 @@ repositories {
     jcenter()
     maven { url = 'https://files.minecraftforge.net/maven' }
 }
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java' // 指定源码目录
+        }
+        resources {
+            srcDir 'src/resources' //资源目录
+        }
+    }
+}
 
 dependencies {
     implementation gradleApi()
